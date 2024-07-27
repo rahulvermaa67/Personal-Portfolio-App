@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Rahul Verma</string>
+    <string name="myname"><u>Rahul Verma</u></string>
+    <string name="profection">Android Application Developer "\n"<b>(Java) &amp; (Kotlin)</b></string>
+    <string name="Skls">Skills</string>
+    <string name="edu">Education</string>
+    <string name="certi">Certificates</string>
+    <string name="corse">Courses</string>
+    <string name="byme">By Rahul Verma</string>
+    <string name="wlcmtxt">Welcome </string>
+    <!--        "\n""\n"Please Wait . . .</string>-->
+    <string name="conttxt"><u> Contact Me </u> </string>
+    <string name="mylastlineskill">These are My Skill and I am Continuously upgrading My skills and Improving Myself."\n" Thank You </string>
+    <string name="java">Java</string>
+    <string name="kotline">Kotline</string>
+    <string name="py">Python</string>
+    <string name="js">Java Script</string>
+    <string name="bootstrap">Bootstrap</string>
+    <string name="html">HTML</string>
+    <string name="wordpress">Wordpress</string>
+    <string name="xml">XML</string>
+    <string name="clang">C</string>
+    <string name="graphic_design">Graphic Design</string>
+    <string name="sql">SQL</string>
+    <string name="digital_marketing">Digital Marketing</string>
+    <string name="title_activity_bottom">bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="myschool">Guru Tegh Bahadur Public School</string>
+    <string name="tenth">High School ( CBSE )</string>
+    <string name="inter">Intermediate School ( CBSE )</string>
+    <string name="bca">Bachelor of Computer Application</string>
+    <string name="dbuu">"Dev Bhoomi Uttarakhand University "</string>
+    <string name="courses"><b>Key Courses:</b> Data Structures, Algorithms,Java , Python , C</string>
+    <string name="great_learning">Great Learning</string>
+    <string name="java_programing">Java Programing</string>
+    <string name="febrruary_2024">Febrruary 2024</string>
+    <string name="google_ads_creations">Google Ads Creations</string>
+    <string name="google">Google</string>
+    <string name="year">July 2023</string>
+    <string name="fundamental_of_digital_marketing">Fundamental of Digital Marketing</string>
+    <string name="ccc">CCC</string>
+    <string name="website_development">Website Development</string>
+    <string name="mind_luster">Mind Luster</string>
+</resources>

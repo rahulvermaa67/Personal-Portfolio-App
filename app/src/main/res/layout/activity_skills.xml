@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/skillbackground"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="false"
+    android:overScrollMode="always"
+    android:scrollIndicators="right"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="defaultPosition"
+    app:layout_scrollFlags="scroll"
+    tools:context=".skills"
+    tools:layout_editor_absoluteY="25dp">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lltp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@color/backtint"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/loadani"-->
+<!--            android:layout_width="76dp"-->
+<!--            android:layout_height="78dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/circimg"-->
+<!--            app:layout_constraintHorizontal_bias="0.492"-->
+<!--            app:layout_constraintVertical_bias="0.745"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/skillsanimation" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvedutext"-->
+<!--            android:layout_width="217dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="@drawable/newradious"-->
+<!--            android:backgroundTint="@color/backtint"-->
+<!--            android:backgroundTintMode="add"-->
+<!--            android:fontFamily="@font/aclonica"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dp"-->
+<!--            android:text="@string/Skls"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/paret"-->
+<!--            android:textSize="30sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.496"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </LinearLayout>-->
+
+
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="#9A000000"
+        android:foregroundGravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        app:constraint_referenced_ids="tvc,tvjava,tvkotline,tvpython,tvhtml,tvbootstrap,tvjs,tvwordprss,tvxml,tvgraphic,,tvsql,tvdigital"
+        app:flow_horizontalGap="4dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/tvjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/java"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvkotline"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <TextView
+        android:id="@+id/tvkotline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/kotline"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/tvpython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/py"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <TextView
+        android:id="@+id/tvjs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/js"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/tvbootstrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/bootstrap"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <TextView
+        android:id="@+id/tvhtml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/html"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvwordprss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/wordpress"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvxml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/xml"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/clang"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvjava"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvgraphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/graphic_design"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvsql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/sql"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tvdigital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/textrectwhit"
+        android:padding="10dp"
+        android:text="@string/digital_marketing"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="207dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvendline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/recborder"
+            android:backgroundTint="#9A000000"
+            android:backgroundTintMode="add"
+            android:padding="5dp"
+            android:text="@string/mylastlineskill"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvjava"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445">
+
+        <TextView
+            android:id="@+id/tvheadingskil"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newradious"
+            android:fontFamily="@font/aclonica"
+            android:padding="15dp"
+            android:text="@string/Skls"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

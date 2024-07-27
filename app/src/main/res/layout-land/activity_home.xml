@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/meimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/me"
+        app:civ_border_color="@color/organge"
+        app:civ_border_width="2.1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/myname"
+        android:textColor="#BB3A11"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/meimg"
+        app:layout_constraintStart_toStartOf="@+id/meimg"
+        app:layout_constraintTop_toBottomOf="@+id/meimg" />
+
+    <TextView
+        android:id="@+id/tvprofection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/calistoga"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:text="@string/profection"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametxt" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="lnkdbtn,whtsbtn,instabtn,gmailbtn"
+        app:flow_horizontalGap="4.5dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="chain2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactxt"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <ImageButton
+        android:id="@+id/lnkdbtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/linkdeinlogo" />
+
+    <ImageButton
+        android:id="@+id/whtsbtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whatsapplogo" />
+
+    <ImageButton
+        android:id="@+id/instabtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/instalogo" />
+
+    <ImageButton
+        android:id="@+id/gmailbtn"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gmaillogo" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="347dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="20dp"
+        app:constraint_referenced_ids="btnskill,btneducation,btncorse,btncerti"
+        app:flow_horizontalGap="9dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="chain2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toEndOf="@+id/flow3"
+        app:layout_constraintTop_toBottomOf="@+id/tvprofection" />
+
+    <Button
+        android:id="@+id/btnskill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txtborder"
+        android:text="@string/Skls"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btneducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txtborder"
+        android:text="@string/edu"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btncorse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txtborder"
+        android:text="@string/corse"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btncerti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txtborder"
+        android:text="@string/certi"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contactxt"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/conttxt"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/flow3"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/flow3"
+        app:layout_constraintTop_toBottomOf="@+id/tvprofection" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

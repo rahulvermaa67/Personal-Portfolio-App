@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/meimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/me"
+        app:civ_border_color="@color/organge"
+        app:civ_border_width="2.1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/myname"
+        android:textColor="#BB3A11"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/meimg"
+        app:layout_constraintStart_toStartOf="@+id/meimg"
+        app:layout_constraintTop_toBottomOf="@+id/meimg" />
+
+    <TextView
+        android:id="@+id/tvprofection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/calistoga"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:text="@string/profection"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametxt" />
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout"-->
+    <!--        android:layout_width="404dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="22dp"-->
+    <!--        android:layout_marginEnd="4dp"-->
+    <!--        android:padding="2dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvprofection">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnskill"-->
+    <!--            android:layout_width="149dp"-->
+    <!--            android:layout_height="57dp"-->
+    <!--            android:layout_marginStart="35dp"-->
+    <!--            android:background="@drawable/txtborder"-->
+    <!--            android:text="@string/Skls"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btneducation"-->
+    <!--            android:layout_width="149dp"-->
+    <!--            android:layout_height="58dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:background="@drawable/txtborder"-->
+    <!--            android:padding="1dp"-->
+    <!--            android:text="@string/edu"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lloutsnd"-->
+    <!--        android:layout_width="404dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:layout_marginEnd="4dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnachiv"-->
+    <!--            android:layout_width="152dp"-->
+    <!--            android:layout_height="58dp"-->
+    <!--            android:layout_marginStart="35dp"-->
+    <!--            android:background="@drawable/txtborder"-->
+    <!--            android:padding="2dp"-->
+    <!--            android:text="@string/corse"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="19sp" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnproj"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="57dp"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:background="@drawable/txtborder"-->
+    <!--            android:text="@string/certi"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="lnkdbtn,whtsbtn,instabtn,gmailbtn"
+        app:flow_horizontalGap="4.5dp"
+        app:flow_maxElementsWrap="4"
+        app:flow_verticalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/lnkdbtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/linkdeinlogo" />
+
+    <ImageButton
+        android:id="@+id/whtsbtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whatsapplogo" />
+
+    <ImageButton
+        android:id="@+id/instabtn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/instalogo" />
+
+    <ImageButton
+        android:id="@+id/gmailbtn"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:background="@drawable/txtborder"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gmaillogo" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+
+        app:constraint_referenced_ids="btnskill,btneducation,btncorse,btncerti"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvprofection" />
+
+    <Button
+        android:id="@+id/btnskill"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:background="@drawable/txtborder"
+        android:text="@string/Skls"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btneducation"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:background="@drawable/txtborder"
+        android:text="@string/edu"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btncorse"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:background="@drawable/txtborder"
+        android:text="@string/corse"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btncerti"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:background="@drawable/txtborder"
+        android:text="@string/certi"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contactxt"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/conttxt"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/flow2"
+        app:layout_constraintTop_toBottomOf="@+id/flow2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
